@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Inalto\FilamentExposurePicker\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentExposurePickerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-exposure-picker';
 
     public $description = 'My command';
 

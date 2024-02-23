@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/inalto/filament-exposure-picker/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/inalto/filament-exposure-picker/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/inalto/filament-exposure-picker.svg?style=flat-square)](https://packagist.org/packages/inalto/filament-exposure-picker)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+The FilamentPHP Exposure Picker is an intuitive and efficient tool designed to enhance user experience by allowing easy selection of the sun's exposure direction through a simple dropdown. Users can input cardinal and intercardinal directions such as N (North), NE (Northeast), E (East), SE (Southeast), S (South), SW (Southwest), W (West), and NW (Northwest) to accurately specify the direction of sunlight exposure. This feature is particularly useful for applications related to real estate, gardening, or any other domain where sunlight direction plays a critical role. The picker simplifies data entry, ensuring that users can quickly and effortlessly input precise information. 
 
 ## Support us
 
@@ -23,25 +23,7 @@ You can install the package via composer:
 composer require inalto/filament-exposure-picker
 ```
 
-You can publish and run the migrations with:
 
-```bash
-php artisan vendor:publish --tag="filament-exposure-picker-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-exposure-picker-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
 
 Optionally, you can publish the views using
 
@@ -52,8 +34,14 @@ php artisan vendor:publish --tag="filament-exposure-picker-views"
 ## Usage
 
 ```php
-$filamentExposurePicker = new Inalto\FilamentExposurePicker();
-echo $filamentExposurePicker->echoPhrase('Hello, Inalto!');
+return $form
+          ->schema([
+            ...
+            ExposurePicker::make('exposure')
+                        ->label(__('inalto.report.fields.exposure'))
+                        ->suffixIcon('heroicon-o-sun'),
+            ...
+            ]);
 ```
 
 ## Testing
@@ -61,18 +49,21 @@ echo $filamentExposurePicker->echoPhrase('Hello, Inalto!');
 ```bash
 composer test
 ```
+## 🤑 Support Us 🤑
 
-## Changelog
+These codes make your life easier and you avoid wasting time?\
+Give us some RedBull!
 
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+USDT(BEP20)\
+0x367B9207ACBC30022F9A7262320E36661D7Ffeb5
 
-## Contributing
+## ✉️ Contact Us ✉️ 
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Do you have any suggestions?\
+Do you need to customise this plugin?
 
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+Mail: webmaster@inalto.com\
+Telegram: @inaltoDev
 
 ## Credits
 

@@ -7,14 +7,6 @@
 
 The FilamentPHP Exposure Picker is an intuitive and efficient tool designed to enhance user experience by allowing easy selection of the sun's exposure direction through a simple dropdown. Users can input cardinal and intercardinal directions such as N (North), NE (Northeast), E (East), SE (Southeast), S (South), SW (Southwest), W (West), and NW (Northwest) to accurately specify the direction of sunlight exposure. This feature is particularly useful for applications related to real estate, gardening, or any other domain where sunlight direction plays a critical role. The picker simplifies data entry, ensuring that users can quickly and effortlessly input precise information. 
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-exposure-picker.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-exposure-picker)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:

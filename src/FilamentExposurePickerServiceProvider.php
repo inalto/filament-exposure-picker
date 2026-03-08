@@ -4,7 +4,7 @@ namespace Inalto\FilamentExposurePicker;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Css;
-//use Inalto\FilamentExposurePicker\Commands\FilamentExposurePickerCommand;
+// use Inalto\FilamentExposurePicker\Commands\FilamentExposurePickerCommand;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
@@ -30,7 +30,7 @@ class FilamentExposurePickerServiceProvider extends PackageServiceProvider
     public function packageBooted()
     {
         FilamentAsset::register([
-            //Js::make('flatpickr-range-plugin', __DIR__.'/../resources/assets/flatpickr/dist/plugins/rangePlugin.js'),
+            // Js::make('flatpickr-range-plugin', __DIR__.'/../resources/assets/flatpickr/dist/plugins/rangePlugin.js'),
             Css::make('exposure', __DIR__.'/../dist/exposure-picker.css'),
             AlpineComponent::make('exposure-picker', __DIR__.'/../dist/exposure-picker.js'),
         ], package: FilamentExposurePicker::getPackageName());

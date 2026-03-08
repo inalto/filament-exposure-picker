@@ -31,8 +31,8 @@ class FilamentExposurePickerServiceProvider extends PackageServiceProvider
     {
         FilamentAsset::register([
             //Js::make('flatpickr-range-plugin', __DIR__.'/../resources/assets/flatpickr/dist/plugins/rangePlugin.js'),
-            Css::make('exposure', __DIR__.'/../dist/exposure-picker.css')->loadedOnRequest(),
-            AlpineComponent::make('exposure-picker', __DIR__.'/../dist/exposure-picker.js')->loadedOnRequest(),
+            Css::make('exposure', __DIR__.'/../dist/exposure-picker.css'),
+            AlpineComponent::make('exposure-picker', __DIR__.'/../dist/exposure-picker.js'),
         ], package: FilamentExposurePicker::getPackageName());
     }
 }

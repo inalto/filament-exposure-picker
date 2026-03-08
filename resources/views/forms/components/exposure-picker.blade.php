@@ -29,9 +29,8 @@
 
     <div
         wire:ignore
-        ax-load
-        ax-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('exposure-picker', package: \Inalto\FilamentExposurePicker\FilamentExposurePicker::getPackageName()) }}"
-        x-load-css="[@js(\Filament\Support\Facades\FilamentAsset::getStyleHref('exposure', \Inalto\FilamentExposurePicker\FilamentExposurePicker::getPackageName()))]"
+        x-load
+        x-load-src="{{ \Filament\Support\Facades\FilamentAsset::getAlpineComponentSrc('exposure-picker', 'inalto/filament-exposure-picker') }}"
         x-data="exposurePicker({
                 state: $wire.{{ $applyStateBindingModifiers("entangle('{$getStatePath()}')") }}
                 })" class="relative">

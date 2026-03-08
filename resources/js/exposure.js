@@ -366,7 +366,7 @@ this.init(element).then(()=>{
         this.ctx.fillStyle = '#000000';
         this.ctx.fill(region);
         this.ctx.restore();
-        navigator.vibrate(100);
+        navigator.vibrate && navigator.vibrate(100);
 
         if (this.element.value !== this.last) {
             this.element.dispatchEvent(new Event('change'));

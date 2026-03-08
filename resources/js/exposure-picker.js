@@ -61,7 +61,7 @@ export default function exposurePicker(args) {
             this.angle = this.angles[this.state];
             this.x0 = this.width / 2;
             this.y0 = this.height / 2;
-            console.log(this.x0+' '+this.y0);
+            // Debug removed
             this.drawArrow();
         },
 
@@ -136,7 +136,7 @@ export default function exposurePicker(args) {
              }
              this.ctx.fill(region);
              this.ctx.restore();
-             navigator.vibrate(100);
+             navigator.vibrate && navigator.vibrate(100);
      /*
              if (this.element.value !== this.last) {
                  this.element.dispatchEvent(new Event('change'));
